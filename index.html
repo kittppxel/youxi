@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/linkus.jpg">
+    <title>肖了个肖</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/credits.css">
+</head>
+<body>
+    <!-- 游戏页面 -->
+    <div id="gameBox" style="display: block;">
+        <!-- 存卡盒子 -->
+        <div id="cardBox"></div>
+        <!-- 存点击后card的盒子 -->
+        <div id="selectedBox" style="display: none;"></div>
+        <!-- 标尺 -->
+        <img src="" id="size">
+        <img src="" id="normCard">
+        <h1 id="prompt" style="display: block;">请点击《开始游戏》</h1>
+        <button id="gameStartButton" style="display: block;">开始游戏</button>
+        <button id="creditsButton" style="display: block;">
+            <h1>制作人信息</h1>
+        </button>
+    </div>
+    
+    <!-- 制作人信息页面 -->
+    <div id="creditsBox" style="display: none;">
+        <dl id="creditsBox_credits">
+            <dt>制作人信息</dt>
+            <dd>
+                <a href="https://space.bilibili.com/1582046133">鱼丸丸yuwanwan</a>
+            </dd>
+        </dl>
+        <dl id="creditsBox_specialThanks">
+            <dt>特别感谢</dt>
+            <dd>
+                <a href="https://space.bilibili.com/626743761">七果Chgo</a>
+            </dd>
+            <dd>
+                <a href="https://space.bilibili.com/20059419">小石同学i（七果现实中的老师）</a>
+            </dd>
+        </dl>
+        <dl id="creditsBox_material">
+            <dt>素材来源</dt>
+            <dd>
+                <a href="https://www.bilibili.com/video/BV1d4411h7Wk/?spm_id_from=333.999.0.0">游戏（少年的人间奇遇）</a>
+            </dd>
+            <dd>
+                <a href="https://space.bilibili.com/3729210">作者（史悲）</a>
+            </dd>
+        </dl>
+        <button id="returnToIndex"></button>
+    </div>
+    
+	<!-- 音乐 -->
+	<audio src="" loop id="bgMusic"></audio>
+
+	<!-- 音效 -->
+	<audio src="audio/button.wav" id="buttonAudio"></audio>
+	<audio src="audio/click.wav" id="clickAudio"></audio>
+	<audio src="audio/score.wav" id="scoreAudio"></audio>
+	<audio src="audio/win.wav" id="winAudio"></audio>
+	<audio src="audio/end.wav" id="endAudio"></audio>
+</body>
+<script src="js/public.js"></script>
+<script src="js/index.js"></script>
+</html>
